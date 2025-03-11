@@ -1,0 +1,12 @@
+Extrem weather,Warning color,Type,Stock change over 1 month (%),Stock price (USD),Inflation (%),EU,Workdays next 30 days,Ongoing conflicts,ESG score,Strike,"Score"
+True,Yellow,Rain,-26.78,290.8,3,False,21,False,24.70,False,Good
+False,None,Storm,0.3,400.93,3,False,15,False,66.01,True,ok
+True,None,Rain,19.31,185.24,3,True,21,False,68.59,False,Good
+True,Red,Snow,28.85,267.53,9,True,23,False,39.88,False,Bad
+True,None,Heatwave,24.26,203.37,7,False,20,True,57.46,False,Good
+False,Yellow,Snow,23.45,200.71,2,False,15,True,57.06,True,Bad
+False,Red,None,6.74,493.47,9,False,18,False,51.05,False,ok
+False,Orange,None,3.59,238.37,3,False,23,True,60.92,True,Bad
+False,Yellow,Rain,17.02,313.36,7,False,18,False,30.89,True,Good
+True,Red,Rain,21.4,237.98,2,False,15,False,48.66,False,Bad
+False,Orange,Snow,1.27,224.66,3,True,20,False,45.17,True,Bad

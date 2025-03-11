@@ -1,0 +1,11 @@
+﻿Name;Org number;Delivery address;Maintain (on hold);Reason code;Credit rating;Balance;Currency;Purchase orders;Non conformance
+Coca Cola Norge;916693869;Robsrudskogen 5, 1470 Lørenskog;No;NULL;A;0;NOK;4;1
+Nordic Steel AS;880484842;Vige Havnevei 4, 4633 Kristiansand;Payment;LOST;B;2,099.00;NOK;2;0
+Elkjøp Norge AS;947054600;Nydalsveien 18B, 0484 Oslo;No;NULL;A;3000;NOK;5;2
+Tine SA;947520528;Lakkegata 23, 0187 Oslo;No;NULL;A;7,890.00;NOK;3;0
+Bergen Engines AS;914799102;Hordvikneset 125, 5108 Bergen;All;QUAILTY;C;12,300.50;NOK;5;2
+Guangdong Zhenrong Energy;959620844;Rm. 15B3, Rm. 1501 Zhizibian, No. 57, Linjiang Ave., Tianhe Dist., Guangzhou, Guangdong, 510623 China;Invoice;OTHER;B;1000;CNH;4;1
+Samsung Electronics;987654321;129 Samsung-ro, Yeongtong-gu, Suwon-si, South Korea;Invoice;OTHER;B;12000;KRW;8;3
+Siemens AG;567890123;Werner-von-Siemens-Straße 1, 80333 München, Germany;Payment;LOST;B;4500;EUR;7;2
+Toyota Motor Corporation;678901234;1 Toyota-Cho, Toyota City, Aichi Prefecture, Japan;No;NULL;A;9000;JPY;5;1
+BP plc;789012345;1 St James's Square, London SW1Y 4PD, United Kingdom;All;QUALITY;C;15000;GBP;3;2
