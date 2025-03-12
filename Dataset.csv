@@ -1,4 +1,4 @@
-﻿Maintain (on hold);Reason code;Credit rating;Balance;Currency;Purchase orders;Non conformance;Extrem weather;Warning color;Type;Stock change over 1 month (%);Stock price (USD);Inflation (%);EU;Workdays next 30 days;Ongoing conflicts;ESG score;Strike;Score
+﻿Maintain (on hold);Reason code;Credit rating;Balance;Currency;Purchase orders;Non conformance;Extreme weather;Warning color;Type;Stock change over 1 month (%);Stock price (USD);Inflation (%);EU;Workdays next 30 days;Ongoing conflicts;ESG score;Strike;Score
 No;NULL;A;0;NOK;4;1;TRUE;Yellow;Rain;-26.78;290.8;3;FALSE;21;FALSE;24.70;FALSE;Good
 Payment;LOST;B;2099;NOK;2;0;FALSE;None;Storm;0.3;400.93;3;FALSE;15;FALSE;66.01;TRUE;ok
 No;NULL;A;3000;NOK;5;2;TRUE;None;Rain;19.31;185.24;3;TRUE;21;FALSE;68.59;FALSE;Good
