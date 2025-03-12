@@ -1,11 +1,11 @@
-﻿Name;Org number;Delivery address;Maintain (on hold);Reason code;Credit rating;Balance;Currency;Purchase orders;Non conformance;Extreme weather;Warning color;Type;Stock change over 1 month (%);Stock price (USD);Inflation (%);EU;Workdays next 30 days;Ongoing conflicts;ESG score;Strike;Score
-Coca Cola Norge;916693869;Robsrudskogen 5, 1470 Lørenskog;No;NULL;A;0;NOK;4;1;TRUE;Yellow;Rain;-26.78;290.8;3;FALSE;21;FALSE;24.70;FALSE;Good
-Nordic Steel AS;880484842;Vige Havnevei 4, 4633 Kristiansand;Payment;LOST;B;2099.00;NOK;2;0;FALSE;None;Storm;0.3;400.93;3;FALSE;15;FALSE;66.01;TRUE;ok
-Elkjøp Norge AS;947054600;Nydalsveien 18B, 0484 Oslo;No;NULL;A;3000;NOK;5;2;TRUE;None;Rain;19.31;185.24;3;TRUE;21;FALSE;68.59;FALSE;Good
-Tine SA;947520528;Lakkegata 23, 0187 Oslo;No;NULL;A;7890.00;NOK;3;0;TRUE;Red;Snow;28.85;267.53;9;TRUE;23;FALSE;39.88;FALSE;Bad
-Bergen Engines AS;914799102;Hordvikneset 125, 5108 Bergen;All;QUALITY;C;12300.50;NOK;5;2;TRUE;None;Heatwave;24.26;203.37;7;FALSE;20;TRUE;57.46;FALSE;Good
-Guangdong Zhenrong Energy;959620844;Rm. 15B3, Rm. 1501 Zhizibian, No. 57, Linjiang Ave., Tianhe Dist., Guangzhou, Guangdong, 510623 China;Invoice;OTHER;B;1000;CNH;4;1;FALSE;Yellow;Snow;23.45;200.71;2;FALSE;15;TRUE;57.06;TRUE;Bad
-Samsung Electronics;987654321;129 Samsung-ro, Yeongtong-gu, Suwon-si, South Korea;Invoice;OTHER;B;12000;KRW;8;3;FALSE;Red;None;6.74;493.47;9;FALSE;18;FALSE;51.05;FALSE;ok
-Siemens AG;567890123;Werner-von-Siemens-Straße 1, 80333 München, Germany;Payment;LOST;B;4500;EUR;7;2;FALSE;Orange;None;3.59;238.37;3;FALSE;23;TRUE;60.92;TRUE;Bad
-Toyota Motor Corporation;678901234;1 Toyota-Cho, Toyota City, Aichi Prefecture, Japan;No;NULL;A;9000;JPY;5;1;FALSE;Yellow;Rain;17.02;313.36;7;FALSE;18;FALSE;30.89;TRUE;Good
-BP plc;789012345;1 St James's Square, London SW1Y 4PD, United Kingdom;All;QUALITY;C;15000;GBP;3;2;TRUE;Red;Rain;21.4;237.98;2;FALSE;15;FALSE;48.66;FALSE;Bad
+﻿Maintain (on hold);Reason code;Credit rating;Balance;Currency;Purchase orders;Non conformance;Extrem weather;Warning color;Type;Stock change over 1 month (%);Stock price (USD);Inflation (%);EU;Workdays next 30 days;Ongoing conflicts;ESG score;Strike;Score
+No;NULL;A;0;NOK;4;1;TRUE;Yellow;Rain;-26.78;290.8;3;FALSE;21;FALSE;24.70;FALSE;Good
+Payment;LOST;B;2099;NOK;2;0;FALSE;None;Storm;0.3;400.93;3;FALSE;15;FALSE;66.01;TRUE;ok
+No;NULL;A;3000;NOK;5;2;TRUE;None;Rain;19.31;185.24;3;TRUE;21;FALSE;68.59;FALSE;Good
+No;NULL;A;7890;NOK;3;0;TRUE;Red;Snow;28.85;267.53;9;TRUE;23;FALSE;39.88;FALSE;Bad
+All;QUAILTY;C;12300;NOK;5;2;TRUE;None;Heatwave;24.26;203.37;7;FALSE;20;TRUE;57.46;FALSE;Good
+Invoice;OTHER;B;1000;CNH;4;1;FALSE;Yellow;Snow;23.45;200.71;2;FALSE;15;TRUE;57.06;TRUE;Bad
+Invoice;OTHER;B;12000;KRW;8;3;FALSE;Red;None;jun.74;493.47;9;FALSE;18;FALSE;51.05;FALSE;ok
+Payment;LOST;B;4500;EUR;7;2;FALSE;Orange;None;mar.59;238.37;3;FALSE;23;TRUE;60.92;TRUE;Bad
+No;NULL;A;9000;JPY;5;1;FALSE;Yellow;Rain;17.feb;313.36;7;FALSE;18;FALSE;30.89;TRUE;Good
+All;QUALITY;C;15000;GBP;3;2;TRUE;Red;Rain;21.apr;237.98;2;FALSE;15;FALSE;48.66;FALSE;Bad
