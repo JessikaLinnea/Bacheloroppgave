@@ -5,6 +5,11 @@ from sklearn.metrics import accuracy_score, classification_report
 from imblearn.over_sampling import SMOTE  # Fix class imbalance
 
 
+import matplotlib.pyplot as plt
+import numpy as np
+
+
+
 
 # Load the training dataset
 training_data = pd.read_csv('Dataset.csv', dtype=str, sep=";")  # Load as strings to prevent conversion errors
@@ -109,3 +114,24 @@ print(f"Prediction for the new data: {new_data_prediction[0]}")
 
 print("Felter i treningsdata:", X_train.columns)
 print("Felter i nye data:", new_data_df_encoded.columns)
+
+
+
+
+
+
+# Hent feature importance fra den trente modellen
+feature_importances = model.feature_importances_
+feature_names = X_train.columns
+
+# Sorter viktige funksjoner i synkende rekkefølge
+indices = np.argsort(feature_importances)[::-1]
+
+# Plott feature importance
+plt.figure(figsize=(12, 6))
+plt.title("Feature Importance")
+plt.bar(range(len(feature_importances)), feature_importances[indices], align="center")
+plt.xticks(range(len(feature_importances)), np.array(feature_names)[indices], rotation=90)
+plt.xlabel("Funksjoner")
+plt.ylabel("Viktighet")
+plt.show()
