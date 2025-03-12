@@ -12,7 +12,7 @@ import numpy as np
 
 
 # Load the training dataset
-training_data = pd.read_csv('Dataset1.csv', dtype=str, sep=";")  # Load as strings to prevent conversion errors
+training_data = pd.read_csv('Dataset.csv', dtype=str, sep=";")  # Load as strings to prevent conversion errors
 
 
 
@@ -31,6 +31,9 @@ for col in numeric_columns:
 # Keep original categorical fields for reference
 categorical_columns = ['Maintain (on hold)', 'Reason code', 'Credit rating', 'Currency', 'Warning color', 'Type']
 original_data = training_data.copy()  # Preserve original dataset for reference
+
+
+
 
 # Encode categorical features (One-Hot Encoding)
 X_train = pd.get_dummies(training_data.drop('Score', axis=1), columns=categorical_columns)
@@ -72,7 +75,7 @@ print(report)
 # Input new data for prediction (keeping strings for reference)
 new_data = {
     'Maintain (on hold)': 'No',
-    'Reason code': 'null',
+    'Reason code': 'NULL',
     'Credit rating': 'A',
     'Balance': 0,
     'Currency': 'NOK',
@@ -98,6 +101,8 @@ new_data_df = pd.DataFrame([new_data])
 # Convert boolean fields in new data to 0/1
 for col in bool_columns:
     new_data_df[col] = new_data_df[col].map({True: 1, False: 0}).astype(int)
+
+
 
 # Encode categorical features (One-Hot Encoding for new data)
 new_data_df_encoded = pd.get_dummies(new_data_df, columns=categorical_columns)
