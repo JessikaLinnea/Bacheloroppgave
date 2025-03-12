@@ -114,8 +114,7 @@ new_data_df_encoded = new_data_df_encoded.reindex(columns=X_train.columns, fill_
 new_data_prediction = model.predict(new_data_df_encoded)
 print(f"Prediction for the new data: {new_data_prediction[0]}")
 
-print("Felter i treningsdata:", X_train.columns)
-print("Felter i nye data:", new_data_df_encoded.columns)
+
 
 
 
