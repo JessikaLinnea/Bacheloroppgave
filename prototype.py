@@ -19,17 +19,17 @@ training_data = pd.read_csv('Dataset.csv', dtype=str, sep=";")  # Load as string
 
 
 # Convert boolean values (True/False stored as strings) into integers (0/1)
-bool_columns = ['Extreme weather', 'EU', 'Ongoing conflicts', 'Strike']
+bool_columns = ['Extreme weather', 'Ongoing conflicts', 'Strike']
 for col in bool_columns:
     training_data[col] = training_data[col].map({'TRUE': 1, 'FALSE': 0}).astype(int)
 
 # Convert numeric fields to float
-numeric_columns = ['Balance', 'Stock change over 1 month (%)', 'Stock price (USD)', 'Inflation (%)', 'ESG score']
+numeric_columns = ['Stock change over 1 month (%)', 'Stock price (USD)', 'ESG score']
 for col in numeric_columns:
     training_data[col] = training_data[col].str.replace(',', '.').astype(float)
 
 # Keep original categorical fields for reference
-categorical_columns = ['Maintain (on hold)', 'Reason code', 'Credit rating', 'Currency', 'Warning color', 'Type']
+categorical_columns = ['Maintain (on hold)', 'Reason code', 'Credit rating']
 original_data = training_data.copy()  # Preserve original dataset for reference
 
 
@@ -77,16 +77,11 @@ new_data = {
     'Maintain (on hold)': 'No',
     'Reason code': 'NULL',
     'Credit rating': 'A',
-    'Balance': 0,
-    'Currency': 'NOK',
     'Purchase order': 4,
     'Non conformance': 1,
     'Extreme weather': False,
-    'Warning color': 'Yellow',  # Categorical
-    'Type': 'Blizzard Warning',  # Categorical
     'Stock change over 1 month (%)': 7.24,
     'Stock price (USD)': 422.71,
-    'Inflation (%)': 5.69,
     'EU': False,
     'Workdays next 30 days': 21,
     'Ongoing conflicts': False,
