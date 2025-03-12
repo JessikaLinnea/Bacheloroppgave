@@ -11,7 +11,6 @@ training_data = pd.read_csv('Dataset.csv', dtype=str, sep=";")  # Load as string
 
 
 
-#hei test christine
 
 
 # Convert boolean values (True/False stored as strings) into integers (0/1)
@@ -31,6 +30,7 @@ original_data = training_data.copy()  # Preserve original dataset for reference
 # Encode categorical features (One-Hot Encoding)
 X_train = pd.get_dummies(training_data.drop('Score', axis=1), columns=categorical_columns)
 y_train = training_data['Score']
+
 
 
 # Check class distribution before applying SMOTE
@@ -92,6 +92,7 @@ new_data = {
 # Convert new data into DataFrame
 new_data_df = pd.DataFrame([new_data])
 
+
 # Convert boolean fields in new data to 0/1
 for col in bool_columns:
     new_data_df[col] = new_data_df[col].map({True: 1, False: 0}).astype(int)
@@ -106,3 +107,5 @@ new_data_df_encoded = new_data_df_encoded.reindex(columns=X_train.columns, fill_
 new_data_prediction = model.predict(new_data_df_encoded)
 print(f"Prediction for the new data: {new_data_prediction[0]}")
 
+print("Felter i treningsdata:", X_train.columns)
+print("Felter i nye data:", new_data_df_encoded.columns)
