@@ -29,7 +29,7 @@ for col in numeric_columns:
     training_data[col] = training_data[col].str.replace(',', '.').astype(float)
 
 # Keep original categorical fields for reference
-categorical_columns = ['Name', 'Org number', 'Delivery address','Maintain (on hold)', 'Reason code', 'Credit rating', 'Currency', 'Warning color', 'Type']
+categorical_columns = ['Maintain (on hold)', 'Reason code', 'Credit rating', 'Currency', 'Warning color', 'Type']
 original_data = training_data.copy()  # Preserve original dataset for reference
 
 # Encode categorical features (One-Hot Encoding)
@@ -71,9 +71,6 @@ print(report)
 
 # Input new data for prediction (keeping strings for reference)
 new_data = {
-    'Name': 'Coca Cola Norge',
-    'Org number': 916693869,
-    'Delivery address': 'Robsrudskogen 5, 1470 Lørenskog',
     'Maintain (on hold)': 'No',
     'Reason code': 'null',
     'Credit rating': 'A',
