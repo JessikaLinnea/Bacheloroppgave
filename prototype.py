@@ -12,7 +12,7 @@ import numpy as np
 
 
 # Load the training dataset
-training_data = pd.read_csv('Dataset.csv', dtype=str, sep=";")  # Load as strings to prevent conversion errors
+training_data = pd.read_csv('Dataset_extended.csv', dtype=str, sep=";")  # Load as strings to prevent conversion errors
 
 
 
@@ -24,7 +24,7 @@ for col in bool_columns:
     training_data[col] = training_data[col].map({'TRUE': 1, 'FALSE': 0}).astype(int)
 
 # Convert numeric fields to float
-numeric_columns = ['Stock change over 1 month (%)', 'Stock price (USD)', 'ESG score']
+numeric_columns = ['Stock change over 1 month (%)', 'ESG score']
 for col in numeric_columns:
     training_data[col] = training_data[col].str.replace(',', '.').astype(float)
 
