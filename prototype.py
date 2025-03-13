@@ -79,14 +79,14 @@ new_data = {
     'Credit rating': 'A',
     'Purchase order': 4,
     'Non conformance': 1,
-    'Extreme weather': False,
+    'Extreme weather': True,
     'Stock change over 1 month (%)': 7.24,
     'Stock price (USD)': 422.71,
     'EU': False,
     'Workdays next 30 days': 21,
     'Ongoing conflicts': False,
     'ESG score': 73.84,
-    'Strike': False
+    'Strike': True
 }
 
 # Convert new data into DataFrame
