@@ -33,11 +33,10 @@ categorical_columns = ['Maintain (on hold)', 'Reason code', 'Credit rating']
 original_data = training_data.copy()  # Preserve original dataset for reference
 
 
-
-
 # Encode categorical features (One-Hot Encoding)
 X_train = pd.get_dummies(training_data.drop('Score', axis=1), columns=categorical_columns)
 y_train = training_data['Score']
+
 
 
 
