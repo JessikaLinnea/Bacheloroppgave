@@ -122,7 +122,7 @@ feature_names = X_train.columns
 # Sorter viktige funksjoner i synkende rekkefølge
 indices = np.argsort(feature_importances)[::-1]
 
-# Plott feature importance
+# Plott feature importance for å visualisere 
 plt.figure(figsize=(12, 6))
 plt.title("Feature Importance")
 plt.bar(range(len(feature_importances)), feature_importances[indices], align="center")
